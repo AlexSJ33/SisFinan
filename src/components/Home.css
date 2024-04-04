@@ -1,13 +1,58 @@
 body {
-    background-color: black;
+    background-color: green;
 
 }
 .container {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    
+    grid:
+    'menu header header header header header'
+    'menu tela1 tela1 tela2 tela2 tela2'
+    'menu tela3 tela3 tela3 tela4 tela4'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196f3;
+    
+    
 }
-.item {
-    border: 2px solid #f76707;
-    border-radius: 5px;
-    background-color: #fff4e6;
+.item1 { 
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item2 {
+    grid-area: menu;
+    height: 100%;
+ }
+.item3 { 
+    grid-area: tela1;
+    height: 40vh;
+}
+.item4 { 
+    grid-area: tela2;
+    height: 40vh;
+    
+}
+.item5 { 
+    grid-area: tela3;
+    height: 40vh;
+    
+}
+.item6 { 
+    grid-area: tela4;
+    height: 40vh;
+    
+}
+.item7 { 
+    grid-area: footer;
+    height: 100%;
+    
+}
+.container > div {
+    background-color:rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
 }
