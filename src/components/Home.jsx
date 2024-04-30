@@ -19,14 +19,21 @@ function Home() {
           </div>
         </div>
         <div className='item2'>
-          <div>LOGO</div>
+          <div className='user'>
+            <img src="../src/image/user2.svg" alt="perfil" />
+          </div>
           <div className='botoes'>
             <button className='btnReceita'>Nova Receita</button>
             <button className='btnDespesa'>Nova Despesa</button>
           </div>
         </div>
         <div className='item3'>Tela1</div>
-        <div className='item4'>Tela2</div>
+        <div className='item4'>
+          <div className='displayTransation'>
+            <h2>Minhas transações</h2>
+            <hr />
+          </div>
+        </div>
         <div className='item5'>Tela3</div>
         
         <div className='item7'>Footer</div>

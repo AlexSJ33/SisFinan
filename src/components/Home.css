@@ -68,10 +68,47 @@ p {
     border: 2px solid #fff;
     max-height: 100%;
  }
+ .user {
+    display: flex;
+    width: 100%;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    
+ }
+ img {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 55px;
+    background-color: #DCDCDC;
+    ;
+    
+ }
+ .displayTransation {
+    
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    
+    height: 95%;
+    
+    background-color: #fff;
+ }
+ .displayTransation h2 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #21973b;
+    
+ }
+ hr {
+    
+    border: 2px solid #26b880;
+ }
  .botoes {
     display: flex;
     flex-direction: column;
-    padding-top: 50%;
+    padding-top: 50px;
     gap: 15px;
     align-items: center;
     
