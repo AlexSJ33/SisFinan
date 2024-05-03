@@ -4,10 +4,11 @@ import AdicionarReceita from './Receita/AdicionarReceita';
 
 
 function Home() {
-  const handleSubmit = (e) =>{
-    e.preventDefault();
-    AdicionarReceita
-  }
+  // const handleSubmit = (e) =>{
+  //   e.preventDefault();
+  //   AdicionarReceita
+  //   alert('clicado')
+  // }
   return (
     <>
     <div className='container'>
@@ -30,7 +31,7 @@ function Home() {
             <img src="../src/image/user2.svg" alt="perfil" />
           </div>
           <div className='botoes'>
-            <button className='btnReceita' onClick={() => handleSubmit()}>Nova Receita</button>
+            <button className='btnReceita' onClick={AdicionarReceita}>Nova Receita</button>
             <button className='btnDespesa'>Nova Despesa</button>
           </div>
         </div>

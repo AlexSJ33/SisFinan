@@ -1,13 +1,46 @@
-.container {
+body {
+    margin: 0;
+    padding: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.formulario {
+    display: flex;
+    justify-content: center;
     
-    width: 100%;
-    height: 100%;
+    
+    padding-top: 50px;
+    
+    width: 380px;
+    height: 450px;
     border-radius: 20px;
-    
+    background-color: gray;
     
 }
-.container form{
-    width: 30px;
+.form-grupo input {
+    
+
+    margin: 12px;
+    width: 60px;
     height: 30px;
-    background-color: red;
+    
+    
 }
+.botao {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    
+}
+.btnSalvar {
+
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+    
+}
+
