@@ -1,14 +1,12 @@
+import { useState } from 'react';
 import './Home.css'
-import AdicionarReceita from './Receita/AdicionarReceita';
+import AdicionarReceita from './Receita/AdicionarReceita'
 
 
 
 function Home() {
-  // const handleSubmit = (e) =>{
-  //   e.preventDefault();
-  //   AdicionarReceita
-  //   alert('clicado')
-  // }
+  const [openModal, setOpenModal] = useState(false)
+
   return (
     <>
     <div className='container'>
@@ -31,7 +29,7 @@ function Home() {
             <img src="../src/image/user2.svg" alt="perfil" />
           </div>
           <div className='botoes'>
-            <button className='btnReceita' onClick={AdicionarReceita}>Nova Receita</button>
+            <button className='btnReceita' onClick={setOpenModal}>Nova Receita</button>
             <button className='btnDespesa'>Nova Despesa</button>
           </div>
         </div>
@@ -45,6 +43,7 @@ function Home() {
         <div className='item5'>Tela3</div>
         
         <div className='item7'>Footer</div>
+        <AdicionarReceita isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}/>
     </div>
     </>
   )
