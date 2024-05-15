@@ -11,19 +11,33 @@ function AdicionarReceita({ isOpen, setModalOpen }) {
     <>
       <div className='formulario'>
           <form onSubmit={''}>
-            <div className='fechar' onClick={setModalOpen}>X</div>
           <div className='form-grupo'>
-            <p>Nova Receita</p>
+            <div className='title'>
+              <div className='fechar' onClick={setModalOpen}>X</div>
+              <p>Nova Receita</p>
+            </div>
             <hr />
+            <div className='LabelValueDate'>
             <label for='valor'>Valor</label>
-            <input type="text" name="valor" id="valor" />
             <label for='valor'>Data</label>
+            </div>
+            <div className='InputValueDate'>
             <input type="text" name="valor" id="valor" />
+            <input type="text" name="valor" id="valor" />
+            </div>
+            <div className='LabelValueDate'>
+            <label for='valor'>Descrição</label>
+            </div>
+            <div className='InputValueDate'>
+            <input type="text" name="descricao" id="descricao" />
+            </div>
+            <div className='botao'>
+              <button className='btnSalvar'type="submit">Salvar</button>
+              <button className='btnSalvar'type="submit" onClick={setModalOpen}>Cancelar</button>     
+            </div>
           </div>
-          <div className='botao'>
-            <button className='btnSalvar'type="submit">Salvar</button>              
-            <button className='btnSalvar'type="submit" onClick={setModalOpen}>Cancelar</button>     
-          </div>
+          
+          
           </form>
        </div>
     </>
