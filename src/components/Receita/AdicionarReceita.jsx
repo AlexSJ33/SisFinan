@@ -12,8 +12,10 @@ function AdicionarReceita({ isOpen, setModalOpen }) {
       <div className='formulario'>
           <form onSubmit={''}>
           <div className='form-grupo'>
+              <div className='fechar'>
+                <p onClick={setModalOpen}> X</p>
+              </div>
             <div className='title'>
-              <div className='fechar' onClick={setModalOpen}>X</div>
               <p>Nova Receita</p>
             </div>
             <hr />

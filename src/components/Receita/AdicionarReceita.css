@@ -8,23 +8,27 @@ form {
     left: 0;
     right: 0;
     /* background-color: rgb(0,0,0,0.5); */
-    background-color: #868686;
+    background-color: #d3e0cd;
     z-index: 1000;
     
     margin-left: 500px;
     margin-top: 150px;
     
     width: 480px;
-    height: 550px;
+    height: 520px;
     border: 1px solid black;
     border-radius: 20px;
     
     
 }
 .title {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
+    color: #fff;
     background-color: #54dd72;
+    padding-bottom: 10px;
 }
 .fechar {
     display: flex;
@@ -33,22 +37,20 @@ form {
     align-items: end;
     padding-right: 12px;
     color: #fff;
-    cursor: pointer;
+    background-color: #54dd72;
+    border-radius: 21px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-bottom: none;
     
     
 }
-p {
-    margin-bottom: 10px;
-    color: #54dd72;
-    
-    
+.fechar p {
+    cursor: pointer;
 }
 
 .form-grupo input {
-    
-    
     margin: 12px;
-    
     height: 30px;
     
     
@@ -57,12 +59,14 @@ p {
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
+    color: gray;
     
 }
 .InputValueDate {
     display: flex;
     justify-content: space-around;
-    border: none
+    border: none;
+ 
 }
 .InputValueDate input {
 
@@ -78,8 +82,10 @@ p {
 }
 .botao {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 15px;
+    padding-top: 30%;
+    
     
 }
 .btnSalvar {
@@ -87,6 +93,10 @@ p {
     border-radius: 12px;
     width: 200px;
     height: 50px;
+    background-color: #badac7;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: medium;
     
     
 }
