@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import './Home.css'
 import AdicionarReceita from './Receita/AdicionarReceita'
+import AdicionarDespesa from './Despesa/AdicionarDespesa';
 
 
 
 function Home() {
   const [openModal, setOpenModal] = useState(false)
+  const [addDespesas, setAddDespesas] = useState(false)
 
   return (
     <>
@@ -30,7 +32,7 @@ function Home() {
           </div>
           <div className='botoes'>
             <button className='btnReceita' onClick={setOpenModal}>Nova Receita</button>
-            <button className='btnDespesa'>Nova Despesa</button>
+            <button className='btnDespesa'onClick={setAddDespesas}>Nova Despesa</button>
           </div>
         </div>
         <div className='item3'>Tela1</div>
@@ -44,6 +46,8 @@ function Home() {
         
         <div className='item7'>Footer</div>
         <AdicionarReceita isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}/>
+        <AdicionarDespesa isOpen={addDespesas} setDespesasAdd={() => setAddDespesas(!addDespesas)}/>
+        
     </div>
     </>
   )

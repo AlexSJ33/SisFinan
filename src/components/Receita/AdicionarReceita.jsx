@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import React from 'react'
-import './AdicionarReceita.css'
+import './styles.css'
 
 function AdicionarReceita({ isOpen, setModalOpen }) {
 // const [valor, setValor] = useState([]);
