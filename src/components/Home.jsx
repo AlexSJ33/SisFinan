@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './Home.module.css'
 import AdicionarReceita from './Receita/AdicionarReceita'
 import AdicionarDespesa from './Despesa/AdicionarDespesa';
+import NovaTransacao from './Transacoes/NovaTransacao';
 
 
 
@@ -30,7 +31,7 @@ function Home() {
         </div>
         <div className={styles.item2}>
           <div className={styles.user}>
-            <img src="../src/image/user2.svg" alt="perfil" />
+            <img src="../src/assets/user2.svg" alt="perfil" />
           </div>
           <div className={styles.botoes}>
             <button className={styles.btnReceita} onClick={setOpenModal}>Nova Receita</button>
@@ -39,18 +40,15 @@ function Home() {
         </div>
         <div className={styles.item3}>Tela1</div>
         <div className={styles.item4}>
-          <div className={styles.displayTransation}>
-            <h2>Minhas transações</h2>
-            <hr />
-          </div>
+        <NovaTransacao />
         </div>
         <div className={styles.item5}>Tela3</div>
         
-        <div className={styles.item7}>Footer</div>
         <AdicionarReceita isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}/>
         <AdicionarDespesa isOpen={addDespesas} setDespesasAdd={() => setAddDespesas(!addDespesas)}/>
         
     </div>
+    <div className={styles.item7}>Footer</div>
     </>
   )
 }

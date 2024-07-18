@@ -1,0 +1,38 @@
+.displayTransation {
+    
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    
+    height: 95%;
+    
+    background-color: #fff;
+ }
+ .displayTransation h2 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #21973b;
+    
+ }
+ .lista {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: baseline;
+    padding-top: 12px;
+    padding-left: 18px;
+
+ }
+ .lista p {
+    font-size: 15px;
+    padding: 8px;
+    
+ }
+ .lista hr {
+    font-size: 10px;
+    
+    max-width: 100%;
+    color: black;
+ }
+ li {
+    list-style-type: none;
+ }
