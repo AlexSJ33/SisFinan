@@ -1,8 +1,8 @@
-import styles from './NovaTransacao.module.css'
+import styles from './MinhasTransacoes.module.css'
 import { dados } from '../../data'
 
 
-function NovaTransacao() {
+function MinhasTransacoes() {
 
     const listItems = dados.map(person =>
         
@@ -29,4 +29,4 @@ function NovaTransacao() {
 
     )
 }
-export default NovaTransacao
+export default MinhasTransacoes

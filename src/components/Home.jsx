@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './Home.module.css'
 import AdicionarReceita from './Receita/AdicionarReceita'
 import AdicionarDespesa from './Despesa/AdicionarDespesa';
-import NovaTransacao from './Transacoes/NovaTransacao';
+import MinhasTransacoes from './Transacoes/MinhasTransacoes';
 
 
 
@@ -38,17 +38,17 @@ function Home() {
             <button className={styles.btnDespesa}onClick={setAddDespesas}>Nova Despesa</button>
           </div>
         </div>
-        <div className={styles.item3}>Tela1</div>
+        <div className={styles.item3}>Item3</div>
         <div className={styles.item4}>
-        <NovaTransacao />
+        <MinhasTransacoes />
         </div>
-        <div className={styles.item5}>Tela3</div>
-        
+        <div className={styles.item5}>Item5</div>
+        <div className={styles.item4} />
         <AdicionarReceita isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}/>
         <AdicionarDespesa isOpen={addDespesas} setDespesasAdd={() => setAddDespesas(!addDespesas)}/>
         
     </div>
-    <div className={styles.item7}>Footer</div>
+    <div className={styles.item6}>Item6</div>
     </>
   )
 }

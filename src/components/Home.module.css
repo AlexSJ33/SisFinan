@@ -1,4 +1,9 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
     background-color: #ebeeeb;
     
     
@@ -7,21 +12,21 @@ body {
 }
 .container {
     display: grid;
-    
     grid:
-    'menu header header header header header'
-    'menu tela1 tela1 tela1 tela2 tela2'
-    'menu tela3 tela3 tela3 tela2 tela2'
-    'menu footer footer footer footer footer';
+    'item2 item1 item1 item1 item1 item1'
+    'item2 item3 item3 item3 item4 item4'
+    'item2 item5 item5 item5 item4 item4'
+    'item2 item6 item6 item6 item6 item6';
 
 }
 .item1 { 
-    grid-area: header;
+    grid-area: item1;
     display: flex;
-    max-height: 100%;
+    width: 100%;
     flex-direction: row;
     
     align-items: center;
+    border: 2px solid #fff;
     
     
 }
@@ -96,11 +101,12 @@ p {
     
 }
 .item2 {
-    grid-area: menu;
+    grid-area: item2;
     display: flex;
     flex-direction: column;
     border: 2px solid #fff;
-    max-height: 100%;
+    
+
  }
  .user {
     display: flex;
@@ -170,38 +176,36 @@ p {
     
  }
 .item3 { 
-    grid-area: tela1;
+    grid-area: item3;
     height: 40vh;
+    width: 100%;
     border: 2px solid #fff;
     
     
 }
 .item4 { 
-    grid-area: tela2;
+    grid-area: item4;
+    
     height: 80vh;
-    border: 2px solid #fff;
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid #c92222;
+    margin-right: 8px;
     
 }
 .item5 { 
-    grid-area: tela3;
+    grid-area: item5;
     height: 40vh;
     border: 2px solid #fff;
     
     
 }
+
 .item6 { 
-    grid-area: tela4;
-    height: 40vh;
-    border: 2px solid #fff;
-    
-    
-    
-}
-.item7 { 
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: footer;
+    grid-area: item6;
     height: 50px;
     border: 2px solid #fff;
     max-height: 100%;

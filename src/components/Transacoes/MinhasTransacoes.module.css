@@ -1,9 +1,12 @@
 .displayTransation {
+    display: flex;
+    flex-direction: column;
     
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
     
     height: 95%;
+    width: 95%;
     
     background-color: #fff;
  }
@@ -20,19 +23,15 @@
     align-items: baseline;
     padding-top: 12px;
     padding-left: 18px;
+    background-color: rgb(133, 128, 128);
 
  }
  .lista p {
-    font-size: 15px;
+    font-size: 12px;
     padding: 8px;
     
  }
- .lista hr {
-    font-size: 10px;
-    
-    max-width: 100%;
-    color: black;
- }
+
  li {
     list-style-type: none;
  }
