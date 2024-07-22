@@ -1,32 +1,32 @@
 export const dados = [{
     id: 0,
-    name: 'Creola Katherine Johnson',
-    profession: 'mathematician',
-    accomplishment: 'spaceflight calculations',
-    imageId: 'MK3eW3A'
+    titulo: 'Netflix',
+    categoria: 'Assinaturas e serviços',
+    preco: 'R$99,00',
+    
   }, {
     id: 1,
-    name: 'Mario José Molina-Pasquel Henríquez',
-    profession: 'chemist',
-    accomplishment: 'discovery of Arctic ozone hole',
-    imageId: 'mynHUSa'
+    titulo: 'Almoço',
+    categoria: 'Alimentação',
+    preco: 'R$99,00',
+
   }, {
     id: 2,
-    name: 'Mohammad Abdus Salam',
-    profession: 'physicist',
-    accomplishment: 'electromagnetism theory',
-    imageId: 'bE7W1ji'
+    titulo: 'Aluguel',
+    categoria: 'Moradia',
+    preco: 'R$99,00',
+
   }, {
     id: 3,
-    name: 'Percy Lavon Julian',
-    profession: 'chemist',
-    accomplishment: 'pioneering cortisone drugs, steroids and birth control pills',
-    imageId: 'IOjWm71'
+    titulo: 'Celular',
+    categoria: 'Telefone',
+    preco: 'R$99,00',
+
   }, {
     id: 4,
-    name: 'Subrahmanyan Chandrasekhar',
-    profession: 'astrophysicist',
-    accomplishment: 'white dwarf star mass calculations',
-    imageId: 'lrWQx8l'
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: 'R$99,00',
+
   }];
   
