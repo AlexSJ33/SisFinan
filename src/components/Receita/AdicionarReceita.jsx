@@ -1,6 +1,12 @@
 // import { useState } from 'react'
 import React from 'react'
+import Modal from 'react-modal'
+
 import styles from './AdicionarReceita.module.css'
+
+// Código necessário para os recursos de acessibilidade
+Modal.setAppElement('#root');
+
 
 function AdicionarReceita({ isOpen, setModalOpen }) {
 // const [valor, setValor] = useState([]);
@@ -13,29 +19,27 @@ function AdicionarReceita({ isOpen, setModalOpen }) {
           <form onSubmit={''}>
           <div className='form-grupo'>
               <div className={styles.fechar}>
-                <p onClick={setModalOpen}> X</p>
+                <div className={styles.left}>
+                <button className={styles.btnFechar} onClick={setModalOpen}> X</button>
+                <label>Adicionar transação</label>
+                </div>
+                <div>
+                <button className={styles.btnSalvar}type="submit">Salvar</button>                
+                </div>
               </div>
-            <div className={styles.title}>
-              <p>Nova Receita</p>
-            </div>
+
             <hr />
             <div className={styles.LabelValueDate}>
-            <label for='valor'>Valor</label>
-            <label for='valor'>Data</label>
+
             </div>
-            <div className={styles.InputValueDate}>
-            <input type="text" name="valor" id="valor" />
-            <input type="text" name="valor" id="valor" />
+            <div className={styles.LabelValueDate}>
+              <input type="text" name="valor" id="valor" placeholder='R$ 0' />
             </div>
             <div className={styles.LabelValueDate}>
             <label for='valor'>Descrição</label>
             </div>
             <div className={styles.InputValueDate}>
             <input type="text" name="descricao" id="descricao" />
-            </div>
-            <div className={styles.botao}>
-              <button className={styles.btnSalvar}type="submit">Salvar</button>
-              <button className={styles.btnSalvar}type="submit" onClick={setModalOpen}>Cancelar</button>     
             </div>
           </div>
           
