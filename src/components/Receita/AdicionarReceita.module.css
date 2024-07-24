@@ -1,28 +1,15 @@
 
-
-.formulario {
+.container {
+    background-color: black;
+}
+.container form {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    position: fixed; 
+    align-items: end;
+    
+    background-color: #fff;
 
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background-color: rgb(0,0,0,0.5); */
-    background-color: #d3e0cd;
-    
-    
-    margin-left: 500px;
-    margin-top: 150px;
-    
-    width: 480px;
-    height: 520px;
-    border: 1px solid black;
-    border-radius: 20px;
-    
-    
 }
 
 .fechar {
@@ -38,6 +25,7 @@
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
     border-bottom: none;
+    width: 100%;
     
 }
 .left {
@@ -61,32 +49,66 @@
     font-size: 22px;
     cursor: pointer;
 }
-
-.form-grupo input {
-    margin: 12px;
-    height: 30px;
-    
-    
-}
-.LabelValueDate {
+.inputs {
     display: flex;
-    justify-content: space-around;
-    margin-top: 5px;
-    color: gray;
-    
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    gap: 6vh;
+
 }
-
-.InputValueDate input {
-
-    border: 1px solid #fff;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+.inputValue {
+    
     width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+    border-bottom: 1.8px solid #c7c6c6;
     
     
     background-color: transparent;
-    
+    font-size: 25px;
+    outline: none;
 }
+.inputValue::placeholder {
+    color: #54dd72;
+ }
+
+
+.inputCategoria {
+
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    border-bottom: 1.8px solid #c7c6c6;
+    
+    font-size: large;
+    outline: none;
+    
+    background-color: transparent;
+}
+.inputCategoria::placeholder {
+    color: #c7c6c6;
+}
+.inputDescricao {
+
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    border-bottom: 1.8px solid #c7c6c6;
+    
+    font-size: large;
+    outline: none;
+    
+    background-color: transparent;
+}
+
 
 
