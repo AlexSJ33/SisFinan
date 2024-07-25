@@ -2,51 +2,40 @@
 import React from 'react'
 import styles from './AdicionarDespesa.module.css'
 
-function AdicionarDespesa({ isOpen, setDespesasAdd }) {
+const AdicionarDespesa = ({ onClose }) => {
 // const [valor, setValor] = useState([]);
 // const [data, setData] = useState([]);
 // const [descricao, setDescricao] = useState("");
-  if (isOpen) {
+
     return(
     <>
-      <div className={styles.formulario}>
-          <form onSubmit={''}>
-          <div className='form-grupo'>
-              <div className={styles.fechar}>
-                <p onClick={setDespesasAdd}> X</p>
+      <div className={styles.container}>
+          <form onSubmit={null}>
+            <div className={styles.fechar}>
+              <div className={styles.left}>
+              <button className={styles.btnFechar} onClick={onClose}> X</button>
+              <label>Adicionar despesa</label>
               </div>
-            <div className={styles.title}>
-              <p>Nova Despesa</p>
+              <div>
+              <button className={styles.btnSalvar}type="submit">SALVAR</button>                
+              </div>
             </div>
-            <hr />
-            <div className={styles.LabelValueDate}>
-            <label for='valor'>Valor</label>
-            <label for='valor'>Data</label>
+
+            <div className={styles.inputs}>
+              <input className={styles.inputValue} type="text" name="valor" id="valor" placeholder='R$ 0' />
+              <input className={styles.inputCategoria} type="text" name="categoria" id="categoria" placeholder='Selecione a categoria' />
+              
+              <select defaultValue="" className={styles.inputDescricao}>
+              <option disabled={true} value="">Conta</option>
+                <option value="carteira">Carteira</option>
+                <option value="nubank">Nubank</option>
+                <option value="bradesco">Bradesco</option>
+              </select>
             </div>
-            <div className={styles.InputValueDate}>
-            <input type="text" name="valor" id="valor" />
-            <input type="text" name="valor" id="valor" />
-            </div>
-            <div className={styles.LabelValueDate}>
-            <label for='valor'>Descrição</label>
-            </div>
-            <div className={styles.InputValueDate}>
-            <input type="text" name="descricao" id="descricao" />
-            </div>
-            <div className={styles.botao}>
-              <button className={styles.btnSalvar}type="submit">Salvar</button>
-              <button className={styles.btnSalvar}type="submit" onClick={setDespesasAdd}>Cancelar</button>     
-            </div>
-          </div>
-          
-          
           </form>
-       </div>
+      </div>
     </>
     )
   }
-  return null
-     
-};
 
 export default AdicionarDespesa;

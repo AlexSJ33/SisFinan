@@ -1,43 +1,41 @@
 // import { useState } from 'react'
 import React from 'react'
-
-
 import styles from './AdicionarReceita.module.css'
 
 
-
-
-function AdicionarReceita({ isOpen, setModalOpen }) {
+const AdicionarReceita = ({ onClose }) => {
 // const [valor, setValor] = useState([]);
 // const [data, setData] = useState([]);
 // const [descricao, setDescricao] = useState("");
-  if (isOpen) {
+
     return(
     <>
       <div className={styles.container}>
-          <form onSubmit={''}>
+          <form onSubmit={null}>
             <div className={styles.fechar}>
               <div className={styles.left}>
-              <button className={styles.btnFechar} onClick={setModalOpen}> X</button>
-              <label>Adicionar transação</label>
+              <button className={styles.btnFechar} onClick={onClose}> X</button>
+              <label>Adicionar receita</label>
               </div>
               <div>
-              <button className={styles.btnSalvar}type="submit">Salvar</button>                
+              <button className={styles.btnSalvar}type="submit">SALVAR</button>                
               </div>
             </div>
 
             <div className={styles.inputs}>
               <input className={styles.inputValue} type="text" name="valor" id="valor" placeholder='R$ 0' />
               <input className={styles.inputCategoria} type="text" name="categoria" id="categoria" placeholder='Selecione a categoria' />
-              <input className={styles.inputDescricao}type="text" name="descricao" id="descricao" />
+              
+              <select defaultValue="" className={styles.inputDescricao}>
+              <option disabled={true} value="">Conta</option>
+                <option value="carteira">Carteira</option>
+                <option value="nubank">Nubank</option>
+                <option value="bradesco">Bradesco</option>
+              </select>
             </div>
           </form>
       </div>
     </>
     )
   }
-  return null
-     
-};
-
-export default AdicionarReceita;
+export default AdicionarReceita

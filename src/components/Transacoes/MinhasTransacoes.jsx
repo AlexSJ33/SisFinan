@@ -4,19 +4,18 @@ import { dados } from '../../data'
 
 function MinhasTransacoes() {
 
-    const listItems = dados.map(transacao =>
+    const listItems = dados.map((transacao,index) => (
         <div className={styles.itens}>
-        <li key={transacao.id}>
+        <li key={index}>
           <p>
             <b>{transacao.titulo}</b>
             {transacao.preco}
           </p>
           <p>{transacao.categoria}</p>
           
-          
-          
         </li>
         </div>
+    )
       );
 
     return (

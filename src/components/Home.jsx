@@ -7,8 +7,26 @@ import MinhasTransacoes from './Transacoes/MinhasTransacoes';
 
 
 function Home() {
-  const [openModal, setOpenModal] = useState(false)
-  const [addDespesas, setAddDespesas] = useState(false)
+  const [openReceita, setOpenReceita] = useState(false)
+  const [openDespesa, setOpenDespesa] = useState(false)
+  const [activeComponent, setActiveComponent] = useState(null);
+
+  const showComponentA = () => {
+    if (activeComponent === null) {
+      setActiveComponent('A');
+    }
+  };
+
+  const showComponentB = () => {
+    if (activeComponent === null) {
+      setActiveComponent('B');
+    }
+  };
+
+  const closeComponent = () => {
+    setActiveComponent(null);
+  };
+
 
   return (
     <>
@@ -34,8 +52,20 @@ function Home() {
             <img src="../src/assets/user2.svg" alt="perfil" />
           </div>
           <div className={styles.botoes}>
-            <button className={styles.btnReceita} onClick={setOpenModal}>Nova Receita</button>
-            <button className={styles.btnDespesa}onClick={setAddDespesas}>Nova Despesa</button>
+            <button className={styles.btnReceita} onClick={showComponentA} disabled={activeComponent === 'B'}>Nova Receita</button>
+            <button className={styles.btnDespesa} onClick={showComponentB} disabled={activeComponent === 'A'}>Nova Despesa</button>
+
+            {activeComponent  === 'A' && (
+              <div>
+                <AdicionarReceita onClose={closeComponent} />
+              </div>
+              
+            )}
+            {activeComponent === 'B' && (
+              <div>
+                <AdicionarDespesa onClose={closeComponent} />
+              </div>
+            )}
           </div>
         </div>
         <div className={styles.item3}>Item3</div>
@@ -44,8 +74,8 @@ function Home() {
         </div>
         <div className={styles.item5}>Item5</div>
         <div className={styles.item4} />
-        <AdicionarReceita isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}/>
-        <AdicionarDespesa isOpen={addDespesas} setDespesasAdd={() => setAddDespesas(!addDespesas)}/>
+        <AdicionarReceita isOpen={openReceita} setReceitaOpen={() => setOpenReceita(!openReceita)}/>
+        <AdicionarDespesa isOpen={openDespesa} setDespesaOpen={() => setOpenDespesa(!openDespesa)}/>
         
     </div>
     <div className={styles.item6}>Item6</div>

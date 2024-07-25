@@ -1,102 +1,124 @@
 
-form {
-    position: fixed; 
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background-color: rgb(0,0,0,0.5); */
-    background-color: #d3e0cd;
-    z-index: 1000;
-    
-    margin-left: 500px;
-    margin-top: 150px;
-    
+.container {
+    position: absolute;
     width: 480px;
-    height: 520px;
-    border: 1px solid black;
-    border-radius: 20px;
-    
-    
+    height: 550px;
+    margin-left: 60vh;
+    margin-top: 14vh;
 }
-.title {
+.container form {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
-    color: #fff;
-    background-color: #eb6f6f;
-    padding-bottom: 10px;
+    justify-content: baseline;
+    align-items: end;
+    border-radius: 21px;
+    background-color: #fff;
+
 }
+
 .fechar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     
-    align-items: end;
-    padding-right: 12px;
+    align-items: start;
+    padding: 12px;
     color: #fff;
     background-color: #eb6f6f;
     border-radius: 21px;
     border-bottom-right-radius: 1px;
     border-bottom-left-radius: 1px;
     border-bottom: none;
-    
-    
-}
-.fechar p {
-    cursor: pointer;
-}
-
-.form-grupo input {
-    margin: 12px;
-    height: 30px;
-    
-    
-}
-.LabelValueDate {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5px;
-    color: gray;
-    
-}
-.InputValueDate {
-    display: flex;
-    justify-content: space-around;
-    border: none;
- 
-}
-.InputValueDate input {
-
-    border: 1px solid #fff;
-    border-top: none;
-    border-right: none;
-    border-left: none;
     width: 100%;
-
-
-    background-color: transparent;
-
+    
 }
-.botao {
+.left {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 30%;
-    
-    
+    gap: 6vh;
 }
 .btnSalvar {
-
-    border-radius: 12px;
-    width: 200px;
-    height: 50px;
-    background-color: #badac7;
-    font-family: cursive;
-    font-weight: bold;
-    font-size: medium;
+    border: none;
     
-    
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
 }
+.btnFechar {
+    border: none;
+    width: 6vh;
+    background-color: transparent;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+label {
+    color: #fff;
+    font-size: 28px;
+}
+.inputs {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    gap: 6vh;
+
+}
+.inputValue {
+    
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+    border-bottom: 1.8px solid #c7c6c6;
+    
+    
+    background-color: transparent;
+    font-size: 25px;
+    outline: none;
+}
+.inputValue::placeholder {
+    color: #eb6f6f;
+ }
+
+
+.inputCategoria {
+
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    border-bottom: 1.8px solid #c7c6c6;
+    
+    font-size: large;
+    outline: none;
+    
+    background-color: transparent;
+}
+.inputCategoria::placeholder,.inputDescricao::placeholder {
+    color: #c7c6c6;
+}
+.inputDescricao {
+
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    border-bottom: 1.8px solid #c7c6c6;
+    
+    font-size: large;
+    outline: none;
+    
+    background-color: transparent;
+}
+
+
 
