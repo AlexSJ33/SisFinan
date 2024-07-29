@@ -1,10 +1,13 @@
 
 .container {
-    position: absolute;
+    position: fixed;
     width: 480px;
-    height: 550px;
-    margin-left: 60vh;
-    margin-top: 14vh;
+    height: 530px;
+    right: 0;
+    left: 60vh;
+    bottom: 0;
+    top: 14vh;
+    
 }
 .container form {
     width: 100%;
@@ -89,36 +92,37 @@ label {
 
 
 .inputCategoria {
-
     width: 100%;
     border-left: none;
     border-right: none;
     border-top: none;
-
     border-bottom: 1.8px solid #c7c6c6;
-    
     font-size: large;
     outline: none;
-    
     background-color: transparent;
 }
 .inputCategoria::placeholder,.inputDescricao::placeholder {
     color: #c7c6c6;
 }
 .inputDescricao {
-
     width: 100%;
     border-left: none;
     border-right: none;
     border-top: none;
-
     border-bottom: 1.8px solid #c7c6c6;
-    
     font-size: large;
     outline: none;
-    
     background-color: transparent;
 }
-
+.inputConta {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1.8px solid #c7c6c6;
+    font-size: large;
+    outline: none;
+    background-color: transparent;
+}
 
 

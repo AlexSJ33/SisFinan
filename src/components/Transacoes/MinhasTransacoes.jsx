@@ -1,8 +1,11 @@
 import styles from './MinhasTransacoes.module.css'
 import { dados } from '../../data'
+import Display from '../Display/Display'
 
 
-function MinhasTransacoes() {
+const MinhasTransacoes =(props) => {
+
+  props.preco
 
     return (
         <>
@@ -18,7 +21,6 @@ function MinhasTransacoes() {
                       {transacao.preco}
                     </p>
                     <p>{transacao.categoria}</p>
-                    
                   </li>                  
                   </ul>
                 </div>

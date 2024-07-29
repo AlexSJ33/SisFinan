@@ -3,12 +3,12 @@ import styles from './Home.module.css'
 import AdicionarReceita from './Receita/AdicionarReceita'
 import AdicionarDespesa from './Despesa/AdicionarDespesa';
 import MinhasTransacoes from './Transacoes/MinhasTransacoes';
+import Display from './Display/Display';
 
 
 
 function Home() {
-  const [openReceita, setOpenReceita] = useState(false)
-  const [openDespesa, setOpenDespesa] = useState(false)
+  
   const [activeComponent, setActiveComponent] = useState(null);
 
   const showComponentA = () => {
@@ -31,22 +31,7 @@ function Home() {
   return (
     <>
     <div className={styles.container}>
-        <div className={styles.item1}>
-          <div className={styles.display}>
-            <div className={styles.saldo}>
-              <h2>Saldo</h2>
-              <p>9999,99</p>
-            </div>
-            <div className={styles.receita}>
-              <h2>Receita</h2>
-              <p>9999,99</p>
-            </div>
-            <div className={styles.despesa}>
-              <h2>Despesa</h2>
-              <p>9999,99</p>
-            </div>
-          </div>
-        </div>
+      <Display />
         <div className={styles.item2}>
           <div className={styles.user}>
             <img src="../src/assets/user2.svg" alt="perfil" />
@@ -74,8 +59,6 @@ function Home() {
         </div>
         <div className={styles.item5}>Item5</div>
         <div className={styles.item4} />
-        <AdicionarReceita isOpen={openReceita} setReceitaOpen={() => setOpenReceita(!openReceita)}/>
-        <AdicionarDespesa isOpen={openDespesa} setDespesaOpen={() => setOpenDespesa(!openDespesa)}/>
         
     </div>
     <div className={styles.item6}>Item6</div>
