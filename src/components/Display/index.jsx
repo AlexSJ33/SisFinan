@@ -1,9 +1,6 @@
-import styles from './Display.module.css'
-import React from 'react'
-import MinhasTransacoes from '../Transacoes/MinhasTransacoes'
+import styles from './styles.module.css'
 
-
-const Display = ({ receita }) => {
+const Display = (props) => {
     
 
     return (
@@ -12,15 +9,15 @@ const Display = ({ receita }) => {
             <div className={styles.display}>
                 <div className={styles.saldo}>
                     <h2>Saldo</h2>
-                    <p>{receita}</p>
+                    <p>R$ {props.saldo}</p>
                 </div>
                 <div className={styles.receita}>
                     <h2>Receita</h2>
-                    <p>{receita}</p>
+                    <p>R$ {props.receita}</p>
                 </div>
                 <div className={styles.despesa}>
                     <h2>Despesa</h2>
-                    <p>9999,99</p>
+                    <p>R$ {props.despesa}</p>
                 </div>
             </div>
         </div>

@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import styles from './Home.module.css'
-import AdicionarReceita from './Receita/AdicionarReceita'
-import AdicionarDespesa from './Despesa/AdicionarDespesa';
-import MinhasTransacoes from './Transacoes/MinhasTransacoes';
-import Display from './Display/Display';
+import styles from './styles.module.css'
+import AdicionarReceita from '../Receita'
+import AdicionarDespesa from '../Despesa';
+import MinhasTransacoes from '../Transacoes';
+import Display from '../Display';
+import { dados } from '../../data'
 
 
-
-function Home() {
+const Home = () => {
   
   const [activeComponent, setActiveComponent] = useState(null);
 
@@ -27,11 +27,22 @@ function Home() {
     setActiveComponent(null);
   };
 
+  let receita = 0
+  let despesa = 0
+  dados.map((d) => {
+    if(d.transacao === 'despesa')
+      despesa =despesa + parseFloat(d.preco)
+    if(d.transacao === 'receita')
+      receita = receita + parseFloat(d.preco)
+    
+  })
+  let saldo = receita - despesa
+  
 
   return (
     <>
     <div className={styles.container}>
-      <Display />
+      <Display saldo = {saldo.toFixed(2)} despesa = {despesa.toFixed(2)} receita = {receita.toFixed(2)}/>
         <div className={styles.item2}>
           <div className={styles.user}>
             <img src="../src/assets/user2.svg" alt="perfil" />

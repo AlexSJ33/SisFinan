@@ -1,13 +1,11 @@
 // import { useState } from 'react'
 import React from 'react'
-import styles from './AdicionarReceita.module.css'
+import styles from './styles.module.css'
 
-
-const AdicionarReceita = ({ onClose }) => {
+const AdicionarDespesa = ({ onClose }) => {
 // const [valor, setValor] = useState([]);
 // const [data, setData] = useState([]);
 // const [descricao, setDescricao] = useState("");
-
 
     return(
     <>
@@ -16,7 +14,7 @@ const AdicionarReceita = ({ onClose }) => {
             <div className={styles.fechar}>
               <div className={styles.left}>
               <button className={styles.btnFechar} onClick={onClose}> X</button>
-              <label>Adicionar receita</label>
+              <label>Adicionar despesa</label>
               </div>
               <div>
               <button className={styles.btnSalvar}type="submit">SALVAR</button>                
@@ -29,7 +27,7 @@ const AdicionarReceita = ({ onClose }) => {
               <input className={styles.inputCategoria} type="text" name="categoria" id="categoria" placeholder='Selecione a categoria' />
               
               <select defaultValue="" className={styles.inputConta}>
-                <option disabled={true} value="">Conta</option>
+              <option disabled={true} value="">Conta</option>
                 <option value="carteira">Carteira</option>
                 <option value="nubank">Nubank</option>
                 <option value="bradesco">Bradesco</option>
@@ -40,4 +38,5 @@ const AdicionarReceita = ({ onClose }) => {
     </>
     )
   }
-export default AdicionarReceita
+
+export default AdicionarDespesa;
