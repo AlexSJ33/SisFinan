@@ -33,5 +33,68 @@ export const dados = [{
     preco: '99,00',
     transacao: 'receita',
 
+  }, {
+    id: 4,
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: '99,00',
+    transacao: 'receita',
+
+  }, {
+    id: 4,
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: '99,00',
+    transacao: 'receita',
+
+  }, {
+    id: 4,
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: '99,00',
+    transacao: 'receita',
+
+  }, {
+    id: 4,
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: '99,00',
+    transacao: 'receita',
+
+  }, {
+    id: 4,
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: '99,00',
+    transacao: 'receita',
+
+  }, {
+    id: 4,
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: '99,00',
+    transacao: 'receita',
+
+  }, {
+    id: 4,
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: '99,00',
+    transacao: 'receita',
+
+  }, {
+    id: 4,
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: '99,00',
+    transacao: 'receita',
+
+  }, {
+    id: 4,
+    titulo: 'Mercadinho',
+    categoria: 'Supermercado',
+    preco: '99,00',
+    transacao: 'receita',
+
   }];
   
