@@ -1,5 +1,7 @@
 import styles from './styles.module.css'
 import { dados } from '../../data'
+import { Link, Element } from 'react-scroll'
+
 
 
 
@@ -10,6 +12,8 @@ const MinhasTransacoes =() => {
         <>
           <div className={styles.displayTransation}>
             <h2>Minhas transações</h2>
+            <hr />
+
             {dados.map((d) => (
               
                 <div className={styles.itens} key={d.id}>
