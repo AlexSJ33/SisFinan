@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 import { dados } from '../../data'
-import { Link, Element } from 'react-scroll'
+
 
 
 

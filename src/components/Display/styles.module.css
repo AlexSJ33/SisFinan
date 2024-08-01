@@ -24,53 +24,61 @@
     align-items: end;
     
 }
-.saldo{
+.saldo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
     width: 33%;
-    
     height: 100%;
-    
-
     background-color: #fff;
     box-shadow: 1.5px 2px 2px #05f539;
+    
+    border: 1px solid transparent;
+    outline: none;
     border-radius: 18px;
-    
-    
-
-    
+    transition: 2s ease-in-out;
+}
+.saldo:hover {
+    transition: 2s ease-in-out;
+    background-color: #aceeba;
 }
 .receita{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-    width: 33%;
-    
+    width: 33%; 
     height: 100%;
-
-    
     background-color: #fff;
     box-shadow: 1.5px 2px 2px #3961e4;
     border-radius: 18px;
 
-
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 18px;
+    transition: 2s ease-in-out;    
+}
+.receita:hover {
+    transition: 2s ease-in-out;
+    background-color: #82b1f8;    
 }
 .despesa{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
     width: 33%;
-    
     height: 100%;
-
-    
     background-color: #fff;
     box-shadow: 1.5px 2px 2px #ec0d0d;   
     border-radius: 18px;
+
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 18px;
+    transition: 2s ease-in-out;
+}
+.despesa:hover {
+    transition: 2s ease-in-out;
+    background-color: #f88282;  
 }
 h2 {
     font-family: cursive;
@@ -78,5 +86,6 @@ h2 {
 }
 p {
     font-size: 25px;
+    
     
 }

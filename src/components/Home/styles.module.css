@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #ebeeeb;
+    
 }
 .container {
     display: grid;
@@ -11,6 +12,7 @@ body {
     'item2 item3 item3 item3 item4 item4'
     'item2 item5 item5 item5 item4 item4'
     'item2 item6 item6 item6 item6 item6';
+    
 
 }
 .item2 {
@@ -18,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 2px solid #fff;
+    
     
 
  }
