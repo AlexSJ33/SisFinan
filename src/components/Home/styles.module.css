@@ -4,6 +4,7 @@ body {
     justify-content: center;
     background-color: #ebeeeb;
     
+    
 }
 .container {
     display: grid;
@@ -11,7 +12,9 @@ body {
     'item2 item1 item1 item1 item1 item1'
     'item2 item3 item3 item3 item4 item4'
     'item2 item5 item5 item5 item4 item4'
-    'item2 item6 item6 item6 item6 item6';
+    ;
+
+    
     
 
 }
@@ -20,43 +23,8 @@ body {
     display: flex;
     flex-direction: column;
     border: 2px solid #fff;
-    
-    
-
  }
- .user {
-    display: flex;
-    width: 100%;
-    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-    
- }
- img {
-    width: 15vh;
-    height: 15vh;
-    border-radius: 55px;
-    background-color: #DCDCDC;
-    ;
-    
- }
- .displayTransation {
-    
-    margin: 10px 10px 10px 10px;
-    border-radius: 10px;
-    
-    height: 95%;
-    
-    background-color: #fff;
- }
- .displayTransation h2 {
-    padding-top: 15px;
-    padding-bottom: 10px;
-    color: #21973b;
-    
- }
+ 
  hr {
     
     border: 2px solid #26b880;
@@ -130,7 +98,6 @@ body {
     height: 50px;
     border: 2px solid #fff;
     max-height: 100%;
-    
     font-size: 30px;
     
 }
