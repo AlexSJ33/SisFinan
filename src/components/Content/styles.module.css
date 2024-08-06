@@ -24,4 +24,40 @@
     background-color: #DCDCDC;
     
  }
-
+ .botoes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 50px;
+    gap: 15px;
+    align-items: center;
+    
+ }
+ .btnReceita {
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #05f539;
+    
+ }
+ .btnReceita:disabled {
+    background-color: #cfebd6;
+ }
+ .btnDespesa {
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #eb6f6f;
+ }
+ .btnDespesa:disabled {
+    background-color: #b98e8e;
+  
+ }

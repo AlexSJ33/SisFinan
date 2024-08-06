@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import styles from './styles.module.css'
-import AdicionarReceita from '../Receita'
-import AdicionarDespesa from '../Despesa';
+
 import MinhasTransacoes from '../Transacoes';
 import Display from '../Display';
 import { dados } from '../../data'
@@ -9,24 +7,6 @@ import Content from '../Content';
 
 
 const Home = () => {
-  
-  const [activeComponent, setActiveComponent] = useState(null);
-
-  const showComponentA = () => {
-    if (activeComponent === null) {
-      setActiveComponent('A');
-    }
-  };
-
-  const showComponentB = () => {
-    if (activeComponent === null) {
-      setActiveComponent('B');
-    }
-  };
-
-  const closeComponent = () => {
-    setActiveComponent(null);
-  };
 
   let receita = 0
   let despesa = 0
@@ -49,22 +29,6 @@ const Home = () => {
         <div className={styles.item2}>
           <Content />       
    
-          <div className={styles.botoes}>
-            {/* <button className={styles.btnReceita} onClick={showComponentA} disabled={activeComponent === 'B'}>Nova Receita</button>
-            <button className={styles.btnDespesa} onClick={showComponentB} disabled={activeComponent === 'A'}>Nova Despesa</button> */}
-
-            {activeComponent  === 'A' && (
-              <div>
-                <AdicionarReceita onClose={closeComponent} />
-              </div>
-              
-            )}
-            {activeComponent === 'B' && (
-              <div>
-                <AdicionarDespesa onClose={closeComponent} />
-              </div>
-            )}
-          </div>
         </div>
         <div className={styles.item3}>Item3</div>
         <div className={styles.item4}>
